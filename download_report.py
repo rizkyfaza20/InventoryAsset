@@ -3,7 +3,7 @@
 import requests
 import os
 import datetime
-from connect-to-server import 
+from connect-to-server import connect_server
 
 nama_file = 'report_file.xlsx'
 timestamp = datetime.datetime.now()

@@ -13,4 +13,4 @@ def connect_server(credentials):
                 'password' : 'pindadit73!'}
     # In this session you've been logged in to Web Server
     r = requests.post(url, data=credentials)
-
+    return(credentials)
