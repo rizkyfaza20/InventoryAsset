@@ -18,3 +18,4 @@ r = requests.get(url_report)
 with open('Web50getdevicebytype.xlsx','wb') as f:
     f.write(r.content)
     os.rename('Web50getdevicebytype.xlsx',nama_file + '_' + '-'.join(t))
+

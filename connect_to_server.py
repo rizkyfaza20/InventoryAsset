@@ -12,7 +12,9 @@ def connect_server(credentials):
     credentials = { 'username' : 'it73', 
                 'password' : 'pindadit73!'}
     # In this session you've been logged in to Web Server
-    r = requests.post(url, data=credentials)
+    s = requests.Session()
+    s.get(url)
+    s.post(url, data=credentials)
     return(credentials)
 
 
